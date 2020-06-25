@@ -1,0 +1,41 @@
+.details-container{
+  padding:10px;
+
+  h2{
+    font-family: 'Great Vibes';
+    font-size: 50px;
+  }
+}
+.details{
+  font-family: 'Great Vibes';
+  text-align: center;
+  font-size: 30px;
+
+  .dose{
+    font-family: 'Poiret One';
+    font-size: 20px;
+  }
+
+}
+
+.new-dose,.new-dose h2{
+  font-family: 'Poiret One';
+  padding:10px;
+}
+
+.back-button, .create-button{
+  font-family: 'Poiret One';
+  text-decoration: none;
+  font-size: 15px;
+  border : black solid 1px;
+  padding : 10px 20px;
+  border-radius:10px;
+  opacity:0.6;
+  margin-bottom:20px;
+
+}
+.back-button, .create-button:hover{
+    opacity:1;
+    text-decoration: none;
+}
+

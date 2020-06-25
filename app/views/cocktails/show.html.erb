@@ -1,32 +1,35 @@
-<h2>Cocktail details</h2>
-<div><ul>
-  <li><%= @cocktail.name %></li>
-</ul>
+<div class="details-container">
+  <div class="details">
+    <h2>Cocktail details</h2>
+    <div>
+      <ul>
+        <li><%= @cocktail.name %></li>
+      </ul>
+    </div>
 
-<ul class="list-group">
-  <% @cocktail.doses.each do |dose| %>
-    <li class="list-group-item">
-      <%= dose.description %>
-      <%= dose.ingredient.name %>
-    </li>
-    <%= link_to dose_path(dose), method: :delete, class:"delete-bin" do%>
-    <i class="fas fa-trash-alt"></i>
-    <% end %>
-  <% end %>
-</ul>
+      <ul class="list-group">
+        <% @cocktail.doses.each do |dose| %>
+          <li class="list-group-item dose">
+            <%= dose.description %>
+            <%= dose.ingredient.name %>
+            <%= link_to dose_path(dose), method: :delete, class: "delete-bin" do%>
+              <i class="fas fa-trash-alt"></i>
+            <% end %>
+           </li>
+        <% end %>
+      </ul>
+    </div>
 </div>
 
-<div>
-  <h2>Create a new dose</h2>
-  <%= simple_form_for [ @cocktail, @dose ] do |f| %>
+<div class="new-dose">
+  <h2 >Create a new dose</h2>
+    <%= simple_form_for [ @cocktail, @dose ] do |f| %>
     <%= f.input :description %>
     <%= f.association :ingredient, class: 'select2'  %>
     <%#f.select :ingredient, Ingredient.all.map{ |i|i.name} %>
-    <%= f.submit 'Create dose now!', class: "btn btn-primary"  %>
-  <% end %>
-
+    <%= f.submit 'Create dose now!', class: "create-button"  %>
+    <% end %>
 </div>
-
-<%= link_to "Back", cocktails_path %>
+<%= link_to "Back", cocktails_path,class: "back-button" %>
 <%#link_to "Create a new dose", new_cocktail_dose_path(@cocktail) %>
 
