@@ -2,9 +2,12 @@
   <div class="details">
     <h2>Cocktail details</h2>
     <div>
-      <ul>
-        <li><%= @cocktail.name %></li>
-      </ul>
+      <%= @cocktail.name %>
+    </div>
+    <div>
+      <%= link_to cocktail_path(@cocktail), method: :delete, class: "delete-bin" do%>
+              <i class="fas fa-trash-alt"></i>
+      <% end %>
     </div>
 
       <ul class="list-group">
@@ -30,12 +33,10 @@
     <%#f.select :ingredient, Ingredient.all.map{ |i|i.name} %>
     <%= f.submit 'Create dose now!', class: "create-button"  %>
     <% end %>
+    <%= link_to "Back", cocktails_path,class: "back-button" %>
+
 </div>
-<%= link_to "Back", cocktails_path,class: "back-button" %>
+
 <%#link_to "Create a new dose", new_cocktail_dose_path(@cocktail) %>
-<div>
-  <%= link_to cocktail_path(@cocktail), method: :delete, class: "delete-bin" do%>
-              <i class="fas fa-trash-alt"></i>
-            <% end %>
-</div>
+
 
