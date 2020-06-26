@@ -21,6 +21,7 @@
     </div>
 </div>
 
+
 <div class="new-dose">
   <h2 >Create a new dose</h2>
     <%= simple_form_for [ @cocktail, @dose ] do |f| %>
@@ -32,4 +33,9 @@
 </div>
 <%= link_to "Back", cocktails_path,class: "back-button" %>
 <%#link_to "Create a new dose", new_cocktail_dose_path(@cocktail) %>
+<div>
+  <%= link_to cocktail_path(@cocktail), method: :delete, class: "delete-bin" do%>
+              <i class="fas fa-trash-alt"></i>
+            <% end %>
+</div>
 
