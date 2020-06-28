@@ -20,7 +20,9 @@
 
 .new-dose,.new-dose h2{
   font-family: 'Poiret One';
-  padding:10px;
+  padding:10px 15px;
+  background-color: white;
+
 }
 
 .back-button, .create-button{
@@ -37,5 +39,12 @@
 .back-button, .create-button:hover{
     opacity:1;
     text-decoration: none;
+}
+.bin{
+  font-size:23px;
+  color: black;
+}
+.bin:hover{
+  opacity:0.5;
 }
 
