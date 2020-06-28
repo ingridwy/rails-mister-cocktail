@@ -1,9 +1,8 @@
 <div class="show-page">
 <div class="details-container">
   <div class="details">
-    <h2>Cocktail details</h2>
     <div>
-      <%= @cocktail.name %>
+      <h2><%= @cocktail.name %></h2>
     </div>
     <div>
       <%= link_to cocktail_path(@cocktail), method: :delete, class: "delete-bin" do%>

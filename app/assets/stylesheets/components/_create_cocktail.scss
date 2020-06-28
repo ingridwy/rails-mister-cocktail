@@ -2,19 +2,25 @@
   padding:10px;
   margin:10px 300px;
 }
-.new-dose a{
-  text-decoration: none;
-  opacity:0.6;
-  color: black;
-}
-.new-dose a:hover{
-  text-decoration: none;
-  opacity:1;
-}
+
 .show-page{
   padding:52px;
   background-image: url("berry.jpg");
   background-size: cover;
   height:100%;
   width:auto;
+}
+.new-cocktail{
+  padding:52px;
+  padding-bottom: 200px;
+  background-image: url("whitetone.jpg");
+  background-size: cover;
+}
+.new-cocktail-title{
+  h1, h3{
+    font-family: 'Poiret One' ;
+  }
+
+  padding:40px 10px;
+  margin:20px;
 }

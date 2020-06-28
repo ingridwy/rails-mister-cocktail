@@ -20,8 +20,6 @@
 
 .new-dose,.new-dose h2{
   font-family: 'Poiret One';
-  padding:10px 15px;
-  background-color: white;
 
 }
 
@@ -36,9 +34,18 @@
   margin-bottom:20px;
 
 }
-.back-button, .create-button:hover{
+.create-button:hover{
     opacity:1;
     text-decoration: none;
+}
+.new-dose a{
+  text-decoration: none;
+  opacity:0.6;
+  color: black;
+}
+.new-dose a:hover{
+  text-decoration: none;
+  opacity:1;
 }
 .bin{
   font-size:23px;
