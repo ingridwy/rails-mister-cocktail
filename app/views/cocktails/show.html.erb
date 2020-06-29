@@ -3,6 +3,7 @@
   <div class="details">
     <div>
       <h2><%= @cocktail.name %></h2>
+      <%= cl_image_tag @cocktail.photo.key,height: 300, width: 200, crop: :fill%>
     </div>
     <div>
       <%= link_to cocktail_path(@cocktail), method: :delete, class: "delete-bin" do%>
