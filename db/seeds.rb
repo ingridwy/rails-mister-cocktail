@@ -8,6 +8,8 @@
 require 'json'
 require 'open-uri'
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+first_file = URI.open('https://res.cloudinary.com/dfxqhh8wb/image/upload/v1582325835/qssp9ams3tsggkmbyck30norzi66.jpg')
+
 drinks_serialized = open(url).read
 drink_list = JSON.parse(drinks_serialized)
 
@@ -16,3 +18,8 @@ drink_list["drinks"].each do |drink|
     name: drink["strIngredient1"]
   )
 end
+Cocktail.destroy_all
+puts 'destroying cocktail.....'
+
+first_cocktail = Cocktail.create(name: "Mojitos")
+first_cocktail.photo.attach(io: first_file, filename: "qssp9ams3tsggkmbyck30norzi66.jpg", content_type: 'image/jpg')
