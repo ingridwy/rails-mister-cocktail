@@ -1,24 +1,17 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# MR Cocktail
+## About
+Mr Cocktail is a website for cocktail lovers to uplaod their favorit cocktail recipe <br>
+Users can choose ingredients from a list and upload a photo <br>
+Using:
+* Ruby on Rails
+* PostgreSQL
+* Javascript ES6
+* Bootstrap
+* SCSS
+* HTML5
+## Project Feature
+* Client side photo upload
+* CRUD operations
+---
+LinkedIn: [Ingrid Cheng](https://www.linkedin.com/in/ingrid-cheng/)<br>
+Website: [MR Cocktail](https://mr-cocktail-ingridc.herokuapp.com/)
